@@ -1,6 +1,4 @@
-import com.fasterxml.jackson.databind.util.JSONPObject
 import com.kurtlehnardt.anagram.AnagramService
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 
 @RestController
