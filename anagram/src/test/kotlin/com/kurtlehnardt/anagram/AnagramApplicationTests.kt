@@ -1,16 +1,38 @@
 package com.kurtlehnardt.anagram
 
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class AnagramApplicationTests {
+class AnagramApplicationTests(private val anagramService: AnagramService){
 
     @Test
-    fun contextLoads() {
+    fun shouldBeTrueForActualAnagram() {
+        var result = anagramService.isAnagram("TomMarvoloRiddle", "IAmLordVoldemort")
+        assertNotNull(result)
+        assertTrue(result)
     }
 
-//    // Tests
+    @Test
+    fun shouldBeFalseForBadAnagram() {
+        var result = anagramService.isAnagram("jarjarbinks", "harrypotter")
+        assertNotNull(result)
+        assertFalse(result)
+    }
+
+    @Test @Disabled
+    fun shouldReturnErrorWithBadInputs() {
+
+    }
+
+    @Test @Disabled
+    fun postRequestShouldReturnWithData() {
+        // todo test endpoint w/ POST
+    }
+
+    // Tests
 //    print("1 This should be true: " +  isAnagram("TomMarvoloRiddle","IAmLordVoldemort"))
 //    print("\n")
 //    print("2 This should be false: " + isAnagram("harrypotter","jarjarbinks"))
