@@ -1,4 +1,4 @@
-package com.kurtlehnardt.anagram
+package com.kurtlehnardt.app.anagram
 
 import org.springframework.stereotype.Component
 @Component

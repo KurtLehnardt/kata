@@ -1,5 +1,6 @@
-package com.kurtlehnardt.anagram
+package com.kurtlehnardt.app
 
+import com.kurtlehnardt.app.anagram.AnagramService
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test

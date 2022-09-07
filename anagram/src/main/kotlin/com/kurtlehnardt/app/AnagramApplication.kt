@@ -1,4 +1,4 @@
-package com.kurtlehnardt.anagram;
+package com.kurtlehnardt.app;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.runApplication
 
