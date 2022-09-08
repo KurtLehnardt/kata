@@ -24,8 +24,14 @@ internal class AnagramServiceTest {
 
     @Test
     fun shouldReturnFalseWhenRepeatingCharsBreakAnagram() {
-        var result = anagramService.isAnagram("dessert","stressed")
-        assertNotNull(result)
-        assertFalse(result)
+        var result1 = anagramService.isAnagram("dessert","stressed")
+        assertNotNull(result1)
+        assertFalse(result1)
+        var result2 = anagramService.isAnagram("1","111")
+        assertNotNull(result2)
+        assertFalse(result2)
+        var result3 = anagramService.isAnagram("222","2")
+        assertNotNull(result3)
+        assertFalse(result3)
     }
 }
