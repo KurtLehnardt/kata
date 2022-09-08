@@ -1,7 +1,8 @@
 package com.kurtlehnardt.app.anagram
 
-import org.springframework.stereotype.Component
-@Component
+import org.springframework.stereotype.Service
+
+@Service
 class AnagramService {
     fun isAnagram(word1: String, word2: String): Boolean {
         val letters1: List<String> = word1.lowercase().replace("\\s+".toRegex(), "").split("").sorted()
