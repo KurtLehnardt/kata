@@ -24,6 +24,7 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-data-rest:1.6.0")
     implementation("org.springdoc:springdoc-openapi-ui:1.6.0")
     implementation("org.springdoc:springdoc-openapi-kotlin:1.6.0")
+    implementation("com.github.kittinunf.fuel:fuel:2.3.1")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
