@@ -10,7 +10,6 @@ class AnagramController(val anagramService: AnagramService) {
     fun index() = "Hello World!"
 
     @PostMapping("/checkAnagram")
-    @ResponseBody
     fun checkAnagramPost(@RequestBody words: String): Any {
         val parser: Parser = Parser.default()
         if (words == null || words.isEmpty()) {
